@@ -1,11 +1,10 @@
-class Menu {
+class Menu //Change the style of the active tab of the menu
+{
   constructor(){
     this.container = $(".activemenu li a");
     this.secondContainer = $("#navigation2 li a");
-    this.thirdContainer = $("#navigation2 div");
+    this.thirdContainer = $("#navigation2 li a");
     this.container.on("click", this.activeFirstMenu(this));
-    //avec .bind sa ne fonctionne pas alors qu'en enlecvant bind et en mettant this en parametre de la
-    // fonction sa marche or this n'etait pas defintit en parametre de la methode explication??
     this.secondContainer.on("click", this.activeSecondMenu(this));
     this.thirdContainer.on("click", this.activeSecondMenuArrow(this));
 
@@ -29,8 +28,8 @@ class Menu {
   }
   activeSecondMenuArrow(){
     this.thirdContainer.on("click", function(){
-      $("#navigation2 div").removeClass("activeMenuArrow");
-      $(this).next().addClass("activeMenuArrow");
+      $("#navigation2 li div").removeClass("arrowdown");
+      $(this).next().addClass("arrowdown");
     })
   }
 
