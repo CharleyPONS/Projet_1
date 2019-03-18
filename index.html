@@ -15,6 +15,8 @@
     <meta property="twitter:description" content="Web page of the start-up WebAgency" />
     <meta property="twitter:image" content="images/logo.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+   
     <title>WebAgency</title>
 </head>
 
@@ -26,7 +28,7 @@
             <img src="images/logo.png" alt="logo webagency" />
 
 
-            <nav class="navigation">
+            <nav class="headerNavigation">
 
                 <label for="toggle" class="fas fa-bars"></label>
                 <input class="selectmenu" type="checkbox" id="toggle" />
@@ -50,7 +52,7 @@
     </div>
 
     <div id="first-bloc">
-        <div class="container">
+        <div class="first-container">
             <div class="first-image">
              <img src="images/slider/bg1.jpg" alt="banner1">
              <figcaption class="tittle_banner">
@@ -161,7 +163,7 @@
             </div>
         </div>
         <div class="bloc1 thirdPart">
-            <h3>SEO</h3>
+            <h3 id="anchorpage3">SEO</h3>
             <p>Nous allons utiliser plusieurs leviers pour influencer en votre faveur<br/>
                les résultats de vos sites dans les moteurs de recherche.
            </p>
@@ -172,7 +174,7 @@
         <div class="emptycircle">
 
         </div>
-        <div class="littlecircle" id="anchorpage3">
+        <div class="littlecircle" >
 
         </div>
     </div>
@@ -373,7 +375,7 @@
             <p class="tittlecontact bottom"><span class="phone">Tel:</span> 01 02 03 04 05</p>
         </div>
 
-        <form method="post" action="traitement.php">
+        <form method="POST" action="traitement.php">
 
             <input type="text" placeholder=" Name" name="name" id="name" />
 
@@ -391,8 +393,9 @@
 </section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
 
-<script src="slider.js"></script>
-<script src="menu.js"></script>
 
-<script src="main.js" ></script>
+<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="portfolio_image.js"></script>
+<script type="text/javascript" src="main.js" ></script>
 </body>
