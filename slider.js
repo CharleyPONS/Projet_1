@@ -2,7 +2,7 @@ class Slider //Slider top of home page
  {
  constructor(){
   this.i =  0;
-  this.items = $('.container div'); //retreive the image from the DOM
+  this.items = $('.first-container div'); //retreive the image from the DOM
   this.progress = $('#progress progress');
   this.itemLength = this.items.length;
   this.autoSlideId = undefined;
@@ -12,7 +12,7 @@ class Slider //Slider top of home page
 }
 
 cycleItems(){
-  var item = $('.container div').eq(this.i);//An indice is defined, we get i (=0 so the first image) into the var item
+  var item = $('.first-container div').eq(this.i);//An indice is defined, we get i (=0 so the first image) into the var item
   this.items.hide();  //hide the other image
   item.css('display','inline-block');//Display the image we've retreived
 }
