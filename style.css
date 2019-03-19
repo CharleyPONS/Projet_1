@@ -134,7 +134,7 @@ label
 .activeFirstMenu 
 {
      border-top: 2px solid #5cadd3;
-    padding-top: 32px;
+    padding-top: 30px;
     color: black;
     outline: 0;
 }
@@ -621,7 +621,7 @@ opacity: 0;
     opacity: 0.6;
 }
 
-.form
+.contactForm
 {
     width: 300px;
     height: 445px;
@@ -666,7 +666,7 @@ opacity: 0;
 
 .bottom
 {
-    margin-bottom: 12px;
+    margin-bottom: 19px;
 }
 
 input:not(.form2)
@@ -679,31 +679,36 @@ input:not(.form2)
     color: grey;
     
 }
-textarea
-{
-    width: 88%;
-    height: 180px;
-    margin-left: 13px;
-    border-radius: 5px;
-    color: grey;
-    font-size: 1.1em;
-    border: 0.4px solid grey;
-    margin-bottom: 10px;
-}
 
+.textarea_message
+{
+        margin-left: 13px;
+            margin-bottom: 12px;
+
+
+}
 
 
 .form2
 {
+  
     margin-left: 13px;
     padding: 8px;
     color: white;
+    background-color: #66a0ff;
     border-radius: 3px;
     border: 0.4px solid #66a0ff;
     border-bottom: 3px #3381ff solid;
     
     
 }
+
+.alert-email, .alert-validate
+{
+    display: none;
+}
+
+
 
                                   /*RESPONSIVE */
 
@@ -778,7 +783,7 @@ aside
 }
 
 
-    .form
+    .contactForm
     {
       
        top: 40px;
@@ -877,7 +882,7 @@ aside
 }
 
 
-    .form
+    .contactForm
 {
     width: 190px;
     height: 300px;
@@ -934,10 +939,19 @@ textarea
 
 
     }
-.activeFirstMenu 
+
+    .activeFirstMenu 
+{
+     border-top: 1px solid #5cadd3;
+    padding-top: 2px;
+    color: black;
+    outline: 0;
+}
+
+/* .activeFirstMenu 
 {
      display: none;
-}
+} */
  
  header div img
  {
@@ -1137,7 +1151,7 @@ aside
 
 
 
-    .form
+    .contactForm
 
 {
     width: 100%;
@@ -1148,7 +1162,7 @@ aside
     
 }
 
-.form .contact
+.contactForm .contact
 {
     font-size: 1.8em;
 }
