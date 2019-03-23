@@ -1,5 +1,5 @@
 /* ------------------ */
-/* ==    SOMMAIRE     */
+/* ==    SUMMMARY     */
 /* ------------------ */
  
 
@@ -36,7 +36,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} 
 
 @font-face{
     font-family: 'fontawesome';
@@ -103,10 +103,10 @@ body{
     margin: 0px;
     width: 100%;
     height: auto;
-    width: 100%; /* Le site occupera 100% de la largeur */
-    max-width: 1920px; /* Au-delÃ  de 1920px on arrÃªte de grossir */
+    width: 100%; 
+    max-width: 1920px; 
     min-width: 320px;
-    margin: auto; /* Le site sera centrÃ© sur les "trÃ¨s" grande rÃ©solutions */
+    margin: auto;
 }
 
 /* -------------------------------- */
@@ -736,24 +736,20 @@ aside
 /* ==   contact form                */
 /* -------------------------------- */
 
-input:not(.form2)
+.textarea_message, input:not(.form2)
 {
     margin-bottom: 12px;
     margin-left: 13px;
     width: 90%;
     border-radius: 3px;
-    border: 0.4px solid grey;
+    border: 1px solid #ccc;
     color: grey;
     
 }
-
-.textarea_message
-{
-    margin-left: 13px;
-    margin-bottom: 12px;
-
-
-}
+ 
+ .textarea_message{
+    width: 60px;
+ }
 
 
 .form2
@@ -954,7 +950,7 @@ aside
 .contactForm
 {
     width: 190px;
-    height: 300px;
+    height: 420px;
     top: 70px;
     right: 55px;
     
@@ -984,7 +980,7 @@ aside
 
 textarea
 {
-    height: 80px;
+    height: 60px;
 }
 
 }
