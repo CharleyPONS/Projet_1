@@ -17,7 +17,7 @@
     <meta name="twitter:description" content="WebAgency réalise vos projets web, site internet, portfolio, e-commerce">
     <meta name="twitter:image" content="images/logo.png">
     <!-- WebAgency -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <title>WebAgency</title>
@@ -430,7 +430,7 @@
 <?php
 function chargerClasse($classname)
 {
-    require $classname . '.php';
+    require 'php/class/' . $classname . '.php';
 }
 spl_autoload_register('chargerClasse');
 
@@ -466,8 +466,8 @@ if(!empty($_POST['Name']) && !empty($_POST['email']) && !empty($_POST['subject']
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"> </script>
 
 
-<script type="text/javascript" src="slider.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript" src="portfolio_image.js"></script>
-<script type="text/javascript" src="main.js" ></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/portfolio_image.js"></script>
+<script type="text/javascript" src="js/main.js" ></script>
 </body>
