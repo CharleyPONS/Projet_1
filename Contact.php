@@ -4,8 +4,9 @@
  * Get and set the Contact Value
  */
 class Contact 
+{
 
-	Private $_id
+	Private $_id,
 			$_Name,
 			$_email,
 			$_Subject,
@@ -16,19 +17,20 @@ class Contact
 		$this->hydrate($data);
 	}
 
-	public function hydrate($data)
+	public function hydrate(array $data)
 	{
 		foreach ($data as $key => $value) {
 			$method = 'set' . ucfirst($key);
 
 			if (method_exists($this, $method)) {
-				$this->$method($value)			}
+				$this->$method($value);
+			}
 		}
 	}
 
 	public function id()
 	{
-		return $this->id;
+		return $this->_id;
 	}
 
 	public function Name()
@@ -56,17 +58,17 @@ class Contact
 		$id = (int) $id;
 
 		if ($id > 0)
-    {
-      $this->_id = $id;
-    }
+		{
+			$this->_id = $id;
+		}
 
 	}
 
 	public function setName($name)
 	{
 		
-		if (is_string($nom)) {
-			$this->_nom = $nom;
+		if (is_string($name)) {
+			$this->_Name = $name;
 		}
 	}
 
@@ -76,12 +78,18 @@ class Contact
 		{
 			$this->_email = $email;
 		}
+
+		else
+		{
+			echo "<script> $('.alert-email).css('display', 'block');</script>";
+
+		}
 	}
 
 	public function setSubject($subject)
 	{
 		if (is_string($subject)) {
-			$this->_Subject = $setSubject;
+			$this->_Subject = $subject;
 		}
 	}
 
