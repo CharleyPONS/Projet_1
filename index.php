@@ -407,7 +407,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10">                   
+                <div class="col-md-10 col-sd-10">                   
                    <textarea class="textarea_message form-control" rows="4" name="message" id="message" placeholder=" Message" required></textarea> 
                </div>
            </div>
