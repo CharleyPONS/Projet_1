@@ -1,4 +1,4 @@
-<!DOCTYPE php>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
@@ -369,7 +369,8 @@
     <div class="filter">
         <div class="map">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.491833680083!2d2.338004315473751!3d48.848830979286554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671dc584dd811%3A0xb0295d26f3442e56!2s5+Rue+de+Vaugirard%2C+75006+Paris!5e0!3m2!1sfr!2sfr!4v1553057495977"  frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807224!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1553353098435" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
         </div>
     </div>
 
@@ -383,7 +384,7 @@
         </div>
 
         <!-- Contact form -->
-        <form class="form-group" method="POST" action="">
+        <form class="form-group" action="" method="post">
             <div class="row">
                 <div class="col-md-11">
                     <input class="form-control" type="text" placeholder=" Name" name="name" id="name" required/>
@@ -433,11 +434,28 @@ function chargerClasse($classname)
 }
 spl_autoload_register('chargerClasse');
 
-$db = new PDO('mysql:host=localhost;dbname=webagency','CharleyPONS!!!!');
+$db = new PDO('mysql:host=localhost;dbname=webagency','CharleyPONS', 'Azeres12!!!!');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
-$manager = new Contact_manager($db);
-$contact = new Contact('Name' => $_POST['Name']);
+$manager = new ContactManager($db);
+if(!empty($_POST['Name']) && !empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message']))
+{
+    $customer = new Contact([
+        'Name' => $_POST['name'],
+        'email' => $_POST['email'],
+        'Subject' => $_POST['subject'],
+        'Message' => $_POST['message'],
+    ]);
+
+    $manager->add($customer);
+
+    echo "<script>
+   alert('Votre message a bien été envoyé');</script>";
+
+};
+
+
+
 
 ?>
 
