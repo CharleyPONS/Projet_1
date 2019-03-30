@@ -552,12 +552,12 @@ aside
 /* ==   Portfolio image                               */
 /* --------------------------------------------------- */
 
-.portfolio img
+/*.portfolio img
 {
     width: 22%;
     height: 33%;    
 }
-
+*/
 .portfolio
 {
 
@@ -635,8 +635,8 @@ aside
 .fa-eye
 {
     position: absolute;
-    bottom: 61px;
-    right: 26px;
+    bottom: 59px;
+    right: 24px;
     color: white;
 }
 

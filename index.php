@@ -384,50 +384,44 @@
         </div>
 
         <!-- Contact form -->
-        <form class="form-group" action="" method="post">
-            <div class="row">
+        <form class="form-group" method="post" action="">
+            <div class="input-group">
                 <div class="col-md-11">
                     <input class="form-control" type="text" placeholder=" Name" name="name" id="name" required/>
                 </div>
             </div>
-            <div class="row">
+            <div class="input-group">
                 <div class="col-md-11">
                     <input class="form-control" type="email" placeholder=" Email" name="email" id="email" required/>
                 </div>
             </div>
-            <div class="row">
+            <div class="input-group">
                 <div class="offset-md-1 offset-sd-1 col-md-9 col-sd-7 form-group alert-email alert-block alert-danger">
                     <h4>Erreur !</h4>
                     Email non valide!
                 </div>
             </div>
-            <div class="row">
+            <div class="input-group">
                 <div class="col-md-11">
-                    <input class="form-control" type="text" placeholder=" Subject" name="subject" id="subject" required/>
+                    <input class="form-control" type="text" placeholder="Subject" name="subject" id="subject" required/>
                 </div>
             </div>
-            <div class="row">
+            <div class="input-group">
                 <div class="col-md-10 col-sd-10">                   
-                   <textarea class="textarea_message form-control" rows="4" name="message" id="message" placeholder=" Message" required></textarea> 
+                   <textarea class="textarea_message form-control" rows="4" name="message" id="message" placeholder="Message" required></textarea> 
                </div>
            </div>
 
-           <div class="row">
+           <div class="input-group">
             <div class="col-md-11">
                 <button type="submit" class="form2 btn btn-primary pull-right">Envoyer</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-11">
-                <div class="form-group alert-validate">
-                    <h4>Votre message a bien été envoyé!</h4>
-                </div>
             </div>
         </div>
 
     </form>
 </div>
 <?php
+
 function chargerClasse($classname)
 {
     require 'php/class/' . $classname . '.php';
@@ -449,8 +443,9 @@ if(!empty($_POST['Name']) && !empty($_POST['email']) && !empty($_POST['subject']
 
     $manager->add($customer);
 
-    echo "<script>
-   alert('Votre message a bien été envoyé');</script>";
+    echo "<script> alert('bien u');</script>";
+
+    ;
 
 };
 

@@ -17,7 +17,7 @@ class Contact
 		$this->hydrate($data);
 	}
 
-	public function hydrate(array $data)
+	public function hydrate(Contact $data)
 	{
 		foreach ($data as $key => $value) {
 			$method = 'set' . ucfirst($key);
@@ -79,11 +79,11 @@ class Contact
 			$this->_email = $email;
 		}
 
-		else
-		{
-			echo "<script> $('.alert-email).css('display', 'block');</script>";
+		// else
+		// {
+		// 	echo "<script> $('.alert-email).css('display', 'block');</script>";
 
-		}
+		// }
 	}
 
 	public function setSubject($subject)
