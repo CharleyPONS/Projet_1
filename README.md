@@ -6,6 +6,6 @@ Il est important de noter que le site originel qui a été réalisé en full CSS
 aucun framework ni code php ou JS.
 
 Par la suite une fois mon examen validé, j'ai rendu le site 100% fonctionel en y intégrant des
-classes PHP pour le formulaire, du code JS pour le menu, le slider, le portfolio, en classe évidemment.
+class PHP pour le formulaire, du code JS pour le menu, le slider, le portfolio, en class évidemment.
 
 Bonne lecture!!
