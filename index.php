@@ -432,7 +432,7 @@ $db = new PDO('mysql:host=localhost;dbname=webagency','CharleyPONS', 'Azeres12!!
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 $manager = new ContactManager($db);
-if(!empty($_POST['Name']) && !empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message']))
+if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message']))
 {
     $customer = new Contact([
         'Name' => $_POST['name'],
